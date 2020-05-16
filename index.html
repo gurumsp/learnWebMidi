@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- shim -->
+	<script src="inc/shim/Base64.js" type="text/javascript"></script>
+	<script src="inc/shim/Base64binary.js" type="text/javascript"></script>
+	<script src="inc/shim/WebAudioAPI.js" type="text/javascript"></script>
+	<script src="inc/shim/WebMIDIAPI.js" type="text/javascript"></script>
+	<!-- jasmid package -->
+	<script src="inc/jasmid/stream.js"></script>
+	<script src="inc/jasmid/midifile.js"></script>
+	<script src="inc/jasmid/replayer.js"></script>
+
+
+    <script src="MIDI.min.js"></script>
+    <script src="song.js"></script>
+	<script src="index.js"></script>
+	<script src="capturemidi.js"></script>
+    <title>Test for the Midi</title>
+</head>
+<body>
+	<section title="Midi to Notes">
+		<h1>Midi to Notes</h1>
+		<button onclick="startMidi()">Start Midi to Notes</button>
+		<button onclick="stopMidi()">Stop Midi to Notes</button>
+	</section>
+	<hr/>
+	<section title="Connect Midi keyboard">
+		<h1>Midi to Notes</h1>
+		<button onclick="captureMidi()">Capture Now</button>
+		<div style="margin: 2em;"><span id="midiconsole"></span></div>
+	</section>
+
+
+</body>
+</html>
